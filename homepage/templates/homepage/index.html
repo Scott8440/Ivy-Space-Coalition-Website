@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+{% include "header_links_meta.html" with title="Ivy Space Coalition"%}
+
+<body style="">
+	<div>
+		<header class="header-background hero">
+			<!--navbar-->
+			<div class="">
+				<img class="home-header-logo" src={% static "images/IISC_logo.png" %}>
+				<ul class="list-reset custom-nav py-1 header-text font-smoothing">
+				<li class="inline-block">
+					<a class="align-middle link-primary header-link mr-2" href={% url 'homepage:register' %}>Register</a>
+				</li>
+				<li class="inline-block">
+					<a class="align-middle link-primary header-link mr-2" href={% url 'homepage:about' %}>About</a>
+				</li>
+				</ul>
+			</div>
+			<div class="title-container mx-auto px-2 mb-2 header-text">
+				<h1 class="hero-title sm-width-full py-4 mt-3 header-title animated fadeInDownCustom">THE IVY SPACE COALITION</h1>
+			</div>
+		</header>
+
+
+	<div class="card-container mx-auto px-2">
+		<img class="card" src={% static "images/Saturn.jpg"%}>
+		<div class="card-image-container">
+			<img class="card-image" src="">
+		</div>
+		<img class="card" src={% static "images/Jupiter.jpg" %}>
+		<div class="card-image-container">
+			<img class="card-image" src="">
+		</div>
+		<img class="card" src={% static "images/Moon.jpg" %}>
+		<div class="card-image-container">
+			<img class="card-image" src="">
+		</div>
+		<img class="card" src={% static "images/Earth.jpg" %}>
+		<div class="card-image-container">
+			<img class="card-image" src="">
+		</div>
+	</div>
+
+	<div class="home-section">
+		<div class="section-content">
+			<h2 class="mb-2">Who We Are</h2>
+			<p> The Inter-Ivy Space Coalition consists of a group of undergraduate students across the Ivy League Universities who are passionate about aerospace engineering and have come together to help develop the next generation of entrepreneurs and aerospace engineers. In the Spring of next year, a conference will be held at Yale University, the first of its kind to connect students interested in aerospace engineering among the Ivy League Universities.  </p>
+		</div>
+	</div>
+
+	<div class="logo-container">
+		<img class="logo" src={% static "images/Brown_logo.png" %}>
+		<img class="logo" src={% static "images/Columbia_logo.png" %}>
+		<img class="logo" src={% static "images/Cornell_logo.png" %}>
+		<img class="logo" src={% static "images/Dartmouth_logo.png" %}>
+		<img class="logo" src={% static "images/Harvard_logo.png" %}>
+		<img class="logo" src={% static "images/Penn_logo.png" %}>
+		<img class="logo" src={% static "images/Princeton_logo.png" %}>
+		<img class="logo" src={% static "images/YUAA_logo.png" %}>
+	</div>
+
+	<div class="home-section">
+		<div class="section-content">
+			<h2 class="mb-2">Join Us</h2>
+			<p> If you are a student at one of the Ivy League schools and would like to get involved with the planning of the ISC’s inaugural conference, email Jonathan Li (jonathan.li@yale.edu) or Scott Smith (scott.smith@yale.edu).  </p>
+		</div>
+	</div>
+</div>
+
+{% include 'bottom_navbar.html' %}
+<script type="text/javascript">( function(){ window.SIG_EXT = {}; } )()</script>
+
+</body>
+</html>
