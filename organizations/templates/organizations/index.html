@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+{% include "header_links_meta.html" with title="Organizations"%}
+
+<body style="">
+{% include "top_navbar.html" %}
+
+<div class='organization_container'>
+	{% for org in organization_list %}
+	<div class='organization_listing'>
+		<div class='org_thumbnail'><img src="{{org.logo.url}}"></div>
+		<div class='org_content'>
+			<h2>{{org.name}}</h2>
+			<p>{{org.description}}</p>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+		
+</div>
+
+{% include 'bottom_navbar.html' %}
+
+<script type="text/javascript">( function(){ window.SIG_EXT = {}; } )()</script>
+</body>
+</html>

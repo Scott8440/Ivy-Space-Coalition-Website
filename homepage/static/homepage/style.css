@@ -882,3 +882,30 @@ code {
 .align-right {
 	float: right;
 }
+
+/* entire list of orgs in '/organizations/' page */
+.organization_container {
+	overflow: auto;
+}
+
+/* div holding a single organization in the '/organizations/' page */
+.organization_listing {
+	position: relative;
+}
+
+/* div holding the thumbnail of a organzization */
+.org_thumbnail {
+	height: 100px;
+	float: left;
+}
+
+.org_thumbnail > img {
+	display: block;
+	height: 100px;
+	width: auto;
+}
+
+.org_content {
+	margin-left: 100px;
+}
+
