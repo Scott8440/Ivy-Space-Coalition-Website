@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	{% include "header_links_meta.html" with title="Post"%}
+
+<body>
+{% include "top_navbar.html" %}
+<p>You are looking at post {{ post_slug }}</p>
+
+{% include 'bottom_navbar.html' %}
+</body>
+
+
+</html>
+
+
