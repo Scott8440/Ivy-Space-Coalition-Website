@@ -10,16 +10,21 @@
 <div class='organization_container'>
 	{% for org in organization_list %}
 	<div class='organization_listing'>
+		<a href={{org.website}}>
 		<div class='org_thumbnail'><img src="{{org.logo.url}}"></div>
+		</a>
 		<div class='org_content'>
 			<h2>{{org.name}}</h2>
 			<p>{{org.description}}</p>
+			<div class='org_buttons'>
+				<button class='org_button' type='button'>About</button>
+				<button class='org_button' type='button'>Posts</button>
+				<a href={{org.website}}><button class='org_button' type='button'>Website</button></a>
+			</div>
 		</div>
 	</div>
 	{% endfor %}
-</div>
-
-		
+	</div>
 </div>
 
 {% include 'bottom_navbar.html' %}

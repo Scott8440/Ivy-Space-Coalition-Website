@@ -290,7 +290,7 @@ code {
 }
 
 .container {
-    max-width: 64em;
+    /* max-width: 64em; */
 }
 
 .col-1 {
@@ -774,6 +774,7 @@ code {
 }
 
 .footer-container {
+	text-align: center;
     display: flex;
     flex-flow: row;
 }
@@ -886,6 +887,8 @@ code {
 /* entire list of orgs in '/organizations/' page */
 .organization_container {
 	overflow: auto;
+	margin-left: 20px;
+	width: 1200px;
 }
 
 /* div holding a single organization in the '/organizations/' page */
@@ -909,3 +912,13 @@ code {
 	margin-left: 100px;
 }
 
+.org_button {
+	background-color: #56a7c5;
+	border: none;
+	color: white;
+	padding: 5px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
