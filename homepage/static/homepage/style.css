@@ -643,7 +643,7 @@ code {
     right: 0;
     z-index: -1;
     display: block;
-    background-image: url("../../../static/images/Space.JPG");
+    background-image: url("../../../static/images/Space.jpg");
     background-position: center;
     background-size: cover;
     filter: contrast(0.7);
