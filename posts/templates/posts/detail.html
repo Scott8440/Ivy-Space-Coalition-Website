@@ -5,7 +5,9 @@
 
 <body>
 {% include "top_navbar.html" %}
-<p>You are looking at post {{ post_slug }}</p>
+<h2>{{post.title}}</h2>
+<p>{{post.body}}</p>
+
 
 {% include 'bottom_navbar.html' %}
 </body>
