@@ -108,3 +108,9 @@ venv.bak/
 
 # media
 media/
+
+#static
+static/
+
+# python virtualenv
+ISCWebenv/
